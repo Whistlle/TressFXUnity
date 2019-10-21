@@ -20,3 +20,5 @@ Assets/ZedZ_Model/
 Temp
 Library
 build
+.vs/
+Logs/

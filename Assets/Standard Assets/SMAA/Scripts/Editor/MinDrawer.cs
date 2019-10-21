@@ -24,7 +24,7 @@
 using UnityEngine;
 using UnityEditor;
 using Smaa;
-
+using MinAttribute = UnityEngine.MinAttribute;
 namespace SmaaEditor
 {
 	[CustomPropertyDrawer(typeof(MinAttribute))]

@@ -1,4 +1,6 @@
-﻿Shader "Hidden/TressFX/DepthMask"
+﻿// Upgrade NOTE: replaced 'mul(UNITY_MATRIX_MVP,*)' with 'UnityObjectToClipPos(*)'
+
+Shader "Hidden/TressFX/DepthMask"
 {
 	Properties
 	{
@@ -29,7 +31,7 @@
 			v2f_simple vert (uint vertexId : SV_VertexID)
 			{
 				v2f_simple o;
-				o.pos = mul(UNITY_MATRIX_MVP, float4(GetVertexPosition(LineIndicesBuffer[vertexId]), 1));
+				o.pos = UnityObjectToClipPos(float4(GetVertexPosition(LineIndicesBuffer[vertexId]), 1));
 				o.pos = UnityApplyLinearShadowBias(o.pos);
 				return o;
 			}
@@ -78,7 +80,7 @@
 				float3 left = normalize(cross (t, float3(0,1,0)));
 				
 				// Set output data
-				o.pos = mul(UNITY_MATRIX_MVP, float4(vert + ((right * (GetHairWidth() * ratio))  * fDirIndex), 1));
+				o.pos = UnityObjectToClipPos(float4(vert + ((right * (GetHairWidth() * ratio))  * fDirIndex), 1));
 				o.pos = UnityApplyLinearShadowBias(o.pos);
 
 				return o;

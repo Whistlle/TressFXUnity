@@ -9,10 +9,10 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{35C169F3-848C-33FD-AC2A-647B57ABDCF0}</ProjectGuid>
+    <ProjectGuid>{6082E1BB-8204-7027-D5D1-38F340F0B688}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <AssemblyName>Assembly-CSharp-firstpass</AssemblyName>
     <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <BaseDirectory>.</BaseDirectory>
@@ -47,7 +47,7 @@
   <PropertyGroup>
     <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <UnityProjectGenerator>Unity/VSTU</UnityProjectGenerator>
-    <UnityProjectType>Game:1</UnityProjectType>
+    <UnityProjectType>GamePlugins:3</UnityProjectType>
     <UnityBuildTarget>StandaloneWindows64:19</UnityBuildTarget>
     <UnityVersion>2018.3.14f1</UnityVersion>
   </PropertyGroup>
@@ -60,69 +60,137 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\SHDebug.cs" />
-    <Compile Include="Assets\TressFX\Dragger.cs" />
-    <Compile Include="Assets\TressFX\EditorExtension\ScriptableObjectUtility.cs" />
-    <Compile Include="Assets\TressFX\EditorExtension\TressFXHair.cs" />
-    <Compile Include="Assets\TressFX\Helper\MeshBuilder.cs" />
-    <Compile Include="Assets\TressFX\MouseOrbit.cs" />
-    <Compile Include="Assets\TressFX\Scripts\ATressFXRender.cs" />
-    <Compile Include="Assets\TressFX\Scripts\TressFX.cs" />
-    <Compile Include="Assets\TressFX\Scripts\TressFXRender.cs" />
-    <Compile Include="Assets\TressFX\Scripts\TressFXSimulation.cs" />
-    <Compile Include="Assets\TressFX\TressFXLib\Formats\AseFormat.cs" />
-    <Compile Include="Assets\TressFX\TressFXLib\Formats\FormatHelper.cs" />
-    <Compile Include="Assets\TressFX\TressFXLib\Formats\IHairFormat.cs" />
-    <Compile Include="Assets\TressFX\TressFXLib\Formats\TFXBFormat.cs" />
-    <Compile Include="Assets\TressFX\TressFXLib\Formats\UTFXFormat.cs" />
-    <Compile Include="Assets\TressFX\TressFXLib\Formats\WavefrontObjFormat.cs" />
-    <Compile Include="Assets\TressFX\TressFXLib\Hair.cs" />
-    <Compile Include="Assets\TressFX\TressFXLib\HairBoundingSphere.cs" />
-    <Compile Include="Assets\TressFX\TressFXLib\HairFormat.cs" />
-    <Compile Include="Assets\TressFX\TressFXLib\HairImportSettings.cs" />
-    <Compile Include="Assets\TressFX\TressFXLib\HairMesh.cs" />
-    <Compile Include="Assets\TressFX\TressFXLib\HairSimulationData.cs" />
-    <Compile Include="Assets\TressFX\TressFXLib\HairStrand.cs" />
-    <Compile Include="Assets\TressFX\TressFXLib\HairStrandVertex.cs" />
-    <Compile Include="Assets\TressFX\TressFXLib\HairStrandVertexTransform.cs" />
-    <Compile Include="Assets\TressFX\TressFXLib\Utilities.cs" />
-    <Compile Include="Assets\TressFXOIT\Example\Scripts\FPSDebug.cs" />
-    <Compile Include="Assets\TressFXOIT\Example\Vendor\HSVPicker\Enums\ColorValues.cs" />
-    <Compile Include="Assets\TressFXOIT\Example\Vendor\HSVPicker\Events\ColorChangedEvent.cs" />
-    <Compile Include="Assets\TressFXOIT\Example\Vendor\HSVPicker\Events\HSVChangedEvent.cs" />
-    <Compile Include="Assets\TressFXOIT\Example\Vendor\HSVPicker\Other\ColorPickerTester.cs" />
-    <Compile Include="Assets\TressFXOIT\Example\Vendor\HSVPicker\Other\TiltWindow.cs" />
-    <Compile Include="Assets\TressFXOIT\Example\Vendor\HSVPicker\UI\ColorImage.cs" />
-    <Compile Include="Assets\TressFXOIT\Example\Vendor\HSVPicker\UI\ColorLabel.cs" />
-    <Compile Include="Assets\TressFXOIT\Example\Vendor\HSVPicker\UI\ColorPicker.cs" />
-    <Compile Include="Assets\TressFXOIT\Example\Vendor\HSVPicker\UI\ColorSlider.cs" />
-    <Compile Include="Assets\TressFXOIT\Example\Vendor\HSVPicker\UI\ColorSliderImage.cs" />
-    <Compile Include="Assets\TressFXOIT\Example\Vendor\HSVPicker\UI\HexColorField.cs" />
-    <Compile Include="Assets\TressFXOIT\Example\Vendor\HSVPicker\UI\SVBoxSlider.cs" />
-    <Compile Include="Assets\TressFXOIT\Example\Vendor\HSVPicker\UtilityScripts\BoxSlider.cs" />
-    <Compile Include="Assets\TressFXOIT\Example\Vendor\HSVPicker\UtilityScripts\HSVUtil.cs" />
-    <Compile Include="Assets\TressFXOIT\OITHelper.cs" />
-    <Compile Include="Assets\TressFXOIT\TressFXOITCamera.cs" />
-    <Compile Include="Assets\TressFXOIT\TressFXOITLight.cs" />
-    <Compile Include="Assets\TressFXOIT\TressFXOITRenderer.cs" />
-    <None Include="Assets\TressFXOIT\Resources\TressFXOIT\TressFXDepthMask.shader" />
-    <None Include="Assets\TressFXOIT\TressFX_Shadows.cginc" />
-    <None Include="Assets\TressFXOIT\TressFX_AA.cginc" />
-    <None Include="Assets\TressFX\Unity_TressFX_License.txt" />
-    <None Include="Assets\TressFXOIT\OIT_Common.cginc" />
-    <None Include="Assets\TressFXOIT\TressFX_SelfShadows.cginc" />
-    <None Include="Assets\TressFXOIT\Resources\TressFXOIT\SceneShadowShader.shader" />
-    <None Include="Assets\TressFXOIT\TressFX_Common.cginc" />
-    <None Include="Assets\TressFX\Shaders\Simulation.compute" />
-    <None Include="Assets\TressFXOIT\Resources\TressFXOIT\TressFXOIT.shader" />
-    <None Include="Assets\TressFX\Shaders\TressFXSurface.shader" />
-    <None Include="Assets\todo.txt" />
-    <None Include="Assets\TressFX\Shaders\TressFX.cginc" />
-    <None Include="Assets\TressFXOIT\Resources\TressFXOIT\Evaluation.shader" />
-    <None Include="Assets\TressFX\Shaders\TressFXShadow.shader" />
-    <None Include="Assets\TressFXOIT\TressFX_Lighting.cginc" />
-    <None Include="Assets\TressFX\AMD_TressFX_License.txt" />
-    <None Include="Assets\TressFXOIT\Example\Vendor\HSVColorPicker.txt" />
+    <Compile Include="Assets\Standard Assets\Effects\CinematicEffects(ALPHA)\AntiAliasing\AntiAliasing.cs" />
+    <Compile Include="Assets\Standard Assets\Effects\CinematicEffects(BETA)\Common\ImageEffectHelper.cs" />
+    <Compile Include="Assets\Standard Assets\Effects\CinematicEffects(BETA)\Common\RenderTexureUtility.cs" />
+    <Compile Include="Assets\Standard Assets\Effects\CinematicEffects(BETA)\DepthOfField\DepthOfField.cs" />
+    <Compile Include="Assets\Standard Assets\Effects\CinematicEffects(BETA)\ScreenSpaceReflection\ScreenSpaceReflection.cs" />
+    <Compile Include="Assets\Standard Assets\Effects\CinematicEffects(BETA)\TonemappingColorGrading\TonemappingColorGrading.cs" />
+    <Compile Include="Assets\Standard Assets\Effects\ImageEffects\Scripts\Antialiasing.cs" />
+    <Compile Include="Assets\Standard Assets\Effects\ImageEffects\Scripts\Bloom.cs" />
+    <Compile Include="Assets\Standard Assets\Effects\ImageEffects\Scripts\BloomAndFlares.cs" />
+    <Compile Include="Assets\Standard Assets\Effects\ImageEffects\Scripts\BloomOptimized.cs" />
+    <Compile Include="Assets\Standard Assets\Effects\ImageEffects\Scripts\Blur.cs" />
+    <Compile Include="Assets\Standard Assets\Effects\ImageEffects\Scripts\BlurOptimized.cs" />
+    <Compile Include="Assets\Standard Assets\Effects\ImageEffects\Scripts\CameraMotionBlur.cs" />
+    <Compile Include="Assets\Standard Assets\Effects\ImageEffects\Scripts\ColorCorrectionCurves.cs" />
+    <Compile Include="Assets\Standard Assets\Effects\ImageEffects\Scripts\ColorCorrectionLookup.cs" />
+    <Compile Include="Assets\Standard Assets\Effects\ImageEffects\Scripts\ColorCorrectionRamp.cs" />
+    <Compile Include="Assets\Standard Assets\Effects\ImageEffects\Scripts\ContrastEnhance.cs" />
+    <Compile Include="Assets\Standard Assets\Effects\ImageEffects\Scripts\ContrastStretch.cs" />
+    <Compile Include="Assets\Standard Assets\Effects\ImageEffects\Scripts\CreaseShading.cs" />
+    <Compile Include="Assets\Standard Assets\Effects\ImageEffects\Scripts\DepthOfField.cs" />
+    <Compile Include="Assets\Standard Assets\Effects\ImageEffects\Scripts\DepthOfFieldDeprecated.cs" />
+    <Compile Include="Assets\Standard Assets\Effects\ImageEffects\Scripts\EdgeDetection.cs" />
+    <Compile Include="Assets\Standard Assets\Effects\ImageEffects\Scripts\Fisheye.cs" />
+    <Compile Include="Assets\Standard Assets\Effects\ImageEffects\Scripts\GlobalFog.cs" />
+    <Compile Include="Assets\Standard Assets\Effects\ImageEffects\Scripts\Grayscale.cs" />
+    <Compile Include="Assets\Standard Assets\Effects\ImageEffects\Scripts\ImageEffectBase.cs" />
+    <Compile Include="Assets\Standard Assets\Effects\ImageEffects\Scripts\ImageEffects.cs" />
+    <Compile Include="Assets\Standard Assets\Effects\ImageEffects\Scripts\MotionBlur.cs" />
+    <Compile Include="Assets\Standard Assets\Effects\ImageEffects\Scripts\NoiseAndGrain.cs" />
+    <Compile Include="Assets\Standard Assets\Effects\ImageEffects\Scripts\NoiseAndScratches.cs" />
+    <Compile Include="Assets\Standard Assets\Effects\ImageEffects\Scripts\PostEffectsBase.cs" />
+    <Compile Include="Assets\Standard Assets\Effects\ImageEffects\Scripts\PostEffectsHelper.cs" />
+    <Compile Include="Assets\Standard Assets\Effects\ImageEffects\Scripts\Quads.cs" />
+    <Compile Include="Assets\Standard Assets\Effects\ImageEffects\Scripts\ScreenOverlay.cs" />
+    <Compile Include="Assets\Standard Assets\Effects\ImageEffects\Scripts\ScreenSpaceAmbientObscurance.cs" />
+    <Compile Include="Assets\Standard Assets\Effects\ImageEffects\Scripts\ScreenSpaceAmbientOcclusion.cs" />
+    <Compile Include="Assets\Standard Assets\Effects\ImageEffects\Scripts\SepiaTone.cs" />
+    <Compile Include="Assets\Standard Assets\Effects\ImageEffects\Scripts\SunShafts.cs" />
+    <Compile Include="Assets\Standard Assets\Effects\ImageEffects\Scripts\TiltShift.cs" />
+    <Compile Include="Assets\Standard Assets\Effects\ImageEffects\Scripts\Tonemapping.cs" />
+    <Compile Include="Assets\Standard Assets\Effects\ImageEffects\Scripts\Triangles.cs" />
+    <Compile Include="Assets\Standard Assets\Effects\ImageEffects\Scripts\Twirl.cs" />
+    <Compile Include="Assets\Standard Assets\Effects\ImageEffects\Scripts\VignetteAndChromaticAberration.cs" />
+    <Compile Include="Assets\Standard Assets\Effects\ImageEffects\Scripts\Vortex.cs" />
+    <Compile Include="Assets\Standard Assets\SMAA\Scripts\DebugPass.cs" />
+    <Compile Include="Assets\Standard Assets\SMAA\Scripts\EdgeDetectionMethod.cs" />
+    <Compile Include="Assets\Standard Assets\SMAA\Scripts\HDRMode.cs" />
+    <Compile Include="Assets\Standard Assets\SMAA\Scripts\MinAttribute.cs" />
+    <Compile Include="Assets\Standard Assets\SMAA\Scripts\PredicationPreset.cs" />
+    <Compile Include="Assets\Standard Assets\SMAA\Scripts\Preset.cs" />
+    <Compile Include="Assets\Standard Assets\SMAA\Scripts\QualityPreset.cs" />
+    <Compile Include="Assets\Standard Assets\SMAA\Scripts\SMAA.cs" />
+    <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BlendOneOne.shader" />
+    <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\NoiseEffectShaderRGB.shader" />
+    <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_DepthOfField\SeparableWeightedBlurDof34.shader" />
+    <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\ShowAlphaChannel.shader" />
+    <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\SunShaftsComposite.shader" />
+    <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\ColorCorrectionCurves.shader" />
+    <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\ScreenSpaceAmbientObscurance.shader" />
+    <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\NFAA.shader" />
+    <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\ScreenSpaceRaytrace.cginc" />
+    <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_DepthOfField\TiltShiftHdrLensBlur.shader" />
+    <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\VignetteShader.shader" />
+    <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_DepthOfField\DepthOfFieldScatter.shader" />
+    <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\MotionBlur.shader" />
+    <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\MobileBloom.shader" />
+    <None Include="Assets\Standard Assets\Effects\CinematicEffects(BETA)\ScreenSpaceReflection\Shaders\ScreenSpaceReflection.shader" />
+    <None Include="Assets\Standard Assets\SMAA\Shaders\SMAA.shader" />
+    <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\Contrast Stretch\MinMaxReduction.shader" />
+    <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\SSAA.shader" />
+    <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\RadialBlur.shader" />
+    <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_DepthOfField\DepthOfFieldDX11.shader" />
+    <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\ContrastComposite.shader" />
+    <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\FXAAPreset3.shader" />
+    <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\FisheyeShader.shader" />
+    <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\Contrast Stretch\Apply.shader" />
+    <None Include="Assets\Standard Assets\Effects\CinematicEffects(BETA)\DepthOfField\Shaders\DepthOfField.shader" />
+    <None Include="Assets\Standard Assets\Effects\CinematicEffects(BETA)\ScreenSpaceReflection\Shaders\ScreenSpaceRaytrace.cginc" />
+    <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\frag_ao.cginc" />
+    <None Include="Assets\Standard Assets\Effects\CinematicEffects(BETA)\TonemappingColorGrading\Shaders\TonemappingColorGradingHistogram.shader" />
+    <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_DepthOfField\DepthOfField34.shader" />
+    <None Include="Assets\Standard Assets\Effects\CinematicEffects(ALPHA)\AntiAliasing\Shaders\SMAA.shader" />
+    <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\MobileBlur.shader" />
+    <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\SSAOShader.shader" />
+    <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\ConvertDepth.shader" />
+    <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\ColorCorrectionCurvesSimple.shader" />
+    <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\NoiseEffectShaderYUV.shader" />
+    <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\CreaseApply.shader" />
+    <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\ChromaticAberrationShader.shader" />
+    <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\GlobalFog.shader" />
+    <None Include="Assets\Standard Assets\SMAA\Shaders\SMAA.cginc" />
+    <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\Contrast Stretch\Luminance.shader" />
+    <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\ColorCorrectionSelective.shader" />
+    <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_DepthOfField\Bokeh34.shader" />
+    <None Include="Assets\Standard Assets\Effects\CinematicEffects(ALPHA)\AntiAliasing\Shaders\SMAA.cginc" />
+    <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\CameraMotionBlurDX11.shader" />
+    <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\SeparableBlurPlus.shader" />
+    <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\MultiPassHollywoodFlares.shader" />
+    <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\BlurEffectConeTaps.shader" />
+    <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\CameraMotionBlur.shader" />
+    <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\DLAA.shader" />
+    <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\NoiseAndGrainDX11.shader" />
+    <None Include="Assets\Standard Assets\Effects\CinematicEffects(BETA)\TonemappingColorGrading\Shaders\TonemappingColorGrading.shader" />
+    <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BrightPassFilter2.shader" />
+    <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_DepthOfField\SeparableBlur.shader" />
+    <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\MotionBlurClear.shader" />
+    <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\ColorCorrectionEffect.shader" />
+    <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\GrayscaleEffect.shader" />
+    <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\SepiaToneEffect.shader" />
+    <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\TwirlEffect.shader" />
+    <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\VortexEffect.shader" />
+    <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\Contrast Stretch\Adaptation.shader" />
+    <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\NoiseAndGrain.shader" />
+    <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\VignettingShader.shader" />
+    <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\Tonemapper.shader" />
+    <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BrightPassFilter.shader" />
+    <None Include="Assets\Standard Assets\Effects\CinematicEffects(BETA)\DepthOfField\Shaders\MedianFilter.shader" />
+    <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\FXAA2.shader" />
+    <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\ColorCorrection3DLut.shader" />
+    <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\LensFlareCreate.shader" />
+    <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\EdgeDetectNormals.shader" />
+    <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\PrepareSunShaftsBlur.shader" />
+    <None Include="Assets\Standard Assets\Effects\CinematicEffects(BETA)\DepthOfField\Shaders\BokehSplatting.shader" />
+    <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\Blend.shader" />
+    <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\BlendModesOverlay.shader" />
+    <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\SimpleClear.shader" />
+    <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\FXAA3Console.shader" />
+    <None Include="Assets\Standard Assets\Effects\CinematicEffects(BETA)\TonemappingColorGrading\Shaders\Histogram.compute" />
+    <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\FXAAPreset2.shader" />
+    <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BlurAndFlares.shader" />
+    <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BlendForBloom.shader" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>C:/Users/Whistlle/Documents/unity/Work/TressFXUnity_Fork/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
@@ -696,12 +764,6 @@
     <Reference Include="System.Xml.Serialization">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2018.3.14f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Xml.Serialization.dll</HintPath>
     </Reference>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{6082E1BB-8204-7027-D5D1-38F340F0B688}</Project>
-      <Name>Assembly-CSharp-firstpass</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />

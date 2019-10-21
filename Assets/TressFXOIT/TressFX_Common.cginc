@@ -1,3 +1,5 @@
+// Upgrade NOTE: replaced 'mul(UNITY_MATRIX_MVP,*)' with 'UnityObjectToClipPos(*)'
+
 #ifndef TRESSFX_COMMON
 #define TRESSFX_COMMON
 
@@ -88,7 +90,7 @@ v2f VertBase(uint vertexIndexId)
 
 	// Calculate final vertex position
 	float4 vertex = float4(vert + ((right * (hairWidth * ratio))  * fDirIndex), 1);
-	o.pos = mul(UNITY_MATRIX_MVP, vertex);
+	o.pos = UnityObjectToClipPos(vertex);
 	o.pixelspace = ComputeScreenPos(o.pos);
 	o.projSpace = o.pos / o.pos.w;
 

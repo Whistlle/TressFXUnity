@@ -30,7 +30,7 @@
 		#pragma surface surf KajiyaKay vertex:VertBase addshadow fullforwardshadows
 		
 		// Target = DX 11
-		#pragma target 5.0
+		#pragma target 4.5
 		#pragma only_renderers d3d11
 
 		struct Input {

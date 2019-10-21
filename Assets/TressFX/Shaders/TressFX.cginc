@@ -36,7 +36,6 @@ struct SurfaceOutputKajiyaKay
 	StructuredBuffer<int> g_TriangleIndicesBuffer;
 	StructuredBuffer<float> g_HairThicknessCoeffs;
 	StructuredBuffer<float4> g_TexCoords;
-#endif
 
 // Vertex index -> hair position (scaled)
 inline float3 GetVertexPosition(uint index)
@@ -46,6 +45,7 @@ inline float3 GetVertexPosition(uint index)
 	vert = mul(_TFX_Object2World, float4(vert, 1)).xyz;
 	return vert;
 }
+#endif
 
 inline fixed4 KajiyaKayLighting(SurfaceOutputKajiyaKay s, UnityLight light)
 {
